@@ -2,7 +2,8 @@
 import  Counter  from "./Counter.jsx";
 import ProfileForm from "./ProfileForm.jsx";
 import TodoList from "./TodoList.jsx"
-import Parent from "./Parent.jsx";
+//import Parent from "./Parent.jsx";
+import Parent from "./Parent2.jsx";
 
 function App() {
   
@@ -12,7 +13,7 @@ function App() {
       {/* <Counter /> */}
       {/* <ProfileForm /> */}
       {/* <TodoList /> */}
-      <Parent />
+      <Parent />  
         
   </div>
   );
