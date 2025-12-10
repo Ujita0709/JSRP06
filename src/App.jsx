@@ -1,6 +1,7 @@
 
 import  Counter  from "./Counter.jsx";
 import ProfileForm from "./ProfileForm.jsx";
+import TodoList from "./TodoList.jsx"
 
 function App() {
   
@@ -8,7 +9,8 @@ function App() {
    <div>
      <h1>React状態管理練習</h1> 
       {/* <Counter /> */}
-      <ProfileForm />
+      {/* <ProfileForm /> */}
+      <TodoList />
         
   </div>
   );
