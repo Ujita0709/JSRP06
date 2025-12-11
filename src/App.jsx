@@ -6,6 +6,7 @@ import TodoList from "./TodoList.jsx"
 import Parent from "./Parent2.jsx";
 import Counter from "./Counter2.jsx"
 import Price from "./Price.jsx";
+import UserName from "./UserName.jsx"
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
       {/* <ProfileForm /> */}
       {/* <TodoList /> */}
       {/* <Parent />   */}
-      <Price />
+      {/* <Price /> */}
+      <UserName />
         
   </div>
   );
