@@ -5,17 +5,19 @@ import TodoList from "./TodoList.jsx"
 //import Parent from "./Parent.jsx";
 import Parent from "./Parent2.jsx";
 import Counter from "./Counter2.jsx"
+import Price from "./Price.jsx";
+
 
 function App() {
   
   return (
    <div>
      <h1>React状態管理練習</h1> 
-       <Counter /> 
+      {/* <Counter />  */}
       {/* <ProfileForm /> */}
       {/* <TodoList /> */}
       {/* <Parent />   */}
-
+      <Price />
         
   </div>
   );
