@@ -10,12 +10,23 @@ import UserName from "./UserName.jsx"
 import SessionApp from "./SessionApp.jsx"
 import Counter from "./Counter3.jsx";
 import Form from "./Form.jsx";
+import { useState } from "react";
+import { UserContext } from "./UserContext";
+import A from "./A";
+import B from "./B";
+
 
 function App() {
   
-  return (
-   <div>
-     <h1>React状態管理練習</h1> 
+    const [user, setUser] = useState("Taro");
+  return(
+    <UserContext.Provider value={user}>
+      <A />
+      <B />
+    </UserContext.Provider>
+  );
+  //<div>
+     //<h1>React状態管理練習</h1> 
       {/* <Counter />   */}
       {/* <ProfileForm /> */}
       {/* <TodoList /> */}
@@ -23,10 +34,10 @@ function App() {
       {/* <Price /> */}
       {/* <UserName /> */}
       {/* <SessionApp /> */}
-      <Form />
+      {/* <Form /> */}
               
-  </div>
-  );
+  //</div>
+  //);
 }
 
-export default App
+export default App;
