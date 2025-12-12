@@ -14,15 +14,23 @@ import { useState } from "react";
 import { UserContext } from "./UserContext";
 import A from "./A";
 import B from "./B";
+import Child3 from "./Child3.jsx"
 
+//<UserContext.Provider value={{ user, setUser }}>
 
-function App() {
+//</UserContext.Provider>
+
+export default function App() {
   
     const [user, setUser] = useState("Taro");
   return(
-    <UserContext.Provider value={user}>
-      <A />
-      <B />
+    <UserContext.Provider value={{user, setUser}}>
+      
+      <h1>Context API 練習</h1>
+      <p>App側のユーザー: {user}</p>
+
+      {/* 下の階層のコンポーネント */}
+      <Child3 />
     </UserContext.Provider>
   );
   //<div>
@@ -40,4 +48,4 @@ function App() {
   //);
 }
 
-export default App;
+//export default App;
