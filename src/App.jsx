@@ -15,25 +15,22 @@
 //import A from "./A";
 //import B from "./B";
 //import Child3 from "./Child3.jsx"
-import Counter from "./Counter4.jsx"
+//import Counter from "./Counter4.jsx"
+
+import { useDispatch, useSelector } from "react-redux";
+import { increment, decrement } from "./store/CounterSlice";
 
 function App() {
-  return(
-  <div>
-     <h1>React状態管理練習</h1> 
-       <Counter />   
-      {/* <ProfileForm /> */}
-      {/* <TodoList /> */}
-      {/* <Parent />   */}
-      {/* <Price /> */}
-      {/* <UserName /> */}
-      {/* <SessionApp /> */}
-      {/* <Form /> */}
+  const count = useSelector((state) => state.counter);
+  const dispatch = useDispatch();
 
-              
-  </div>
+  return (
+    <div>
+      <h1>Count: {count}</h1>
+      <button onClick={() => dispatch(increment())}>＋</button>
+      <button onClick={() => dispatch(decrement())}>－</button>
+    </div>
   );
-  
 }
 
 export default App;
