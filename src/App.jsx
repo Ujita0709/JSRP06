@@ -16,19 +16,18 @@
 //import B from "./B";
 //import Child3 from "./Child3.jsx"
 //import Counter from "./Counter4.jsx"
+//import { useDispatch, useSelector } from "react-redux";
+//import { increment, decrement } from "./store/CounterSlice";
 
-import { useDispatch, useSelector } from "react-redux";
-import { increment, decrement } from "./store/CounterSlice";
+import UserForm from "./UserForm.jsx"
+import UserList from "./UserList.jsx";
 
 function App() {
-  const count = useSelector((state) => state.counter);
-  const dispatch = useDispatch();
-
+  
   return (
     <div>
-      <h1>Count: {count}</h1>
-      <button onClick={() => dispatch(increment())}>＋</button>
-      <button onClick={() => dispatch(decrement())}>－</button>
+      <UserForm />
+      <UserList />
     </div>
   );
 }
