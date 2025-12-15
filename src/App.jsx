@@ -16,26 +16,12 @@ import A from "./A";
 import B from "./B";
 import Child3 from "./Child3.jsx"
 
-//<UserContext.Provider value={{ user, setUser }}>
 
-//</UserContext.Provider>
-
-export default function App() {
-  
-    const [user, setUser] = useState("Taro");
+function App() {
   return(
-    <UserContext.Provider value={{user, setUser}}>
-      
-      <h1>Context API 練習</h1>
-      <p>App側のユーザー: {user}</p>
-
-      {/* 下の階層のコンポーネント */}
-      <Child3 />
-    </UserContext.Provider>
-  );
-  //<div>
-     //<h1>React状態管理練習</h1> 
-      {/* <Counter />   */}
+  <div>
+     <h1>React状態管理練習</h1> 
+       <Counter />   
       {/* <ProfileForm /> */}
       {/* <TodoList /> */}
       {/* <Parent />   */}
@@ -43,9 +29,11 @@ export default function App() {
       {/* <UserName /> */}
       {/* <SessionApp /> */}
       {/* <Form /> */}
+
               
-  //</div>
-  //);
+  </div>
+  );
+  
 }
 
-//export default App;
+export default App;
